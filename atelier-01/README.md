@@ -236,7 +236,7 @@ Pour se simplifier la vie, je vais me créer un alias pour utiliser ansible sans
 Dans le fichier ``~/.bashrc`` on va rajouter la commande suivante :
 
 ```bash
-alias ansible="/$HOME/.venv/ansible/bin/ansible"
+alias ansible="/home/vagrant/.venv/ansible/bin/ansible"
 ```
 
 puis si on recharge le fichier ``~/.bashrc``, on va pouvoir appeler ansible sans être dans le venv
