@@ -7,3 +7,4 @@ Compte de rendu du cours d'Ansible dispensé par M Kovacs à l'IMT Mines Alès d
 - [test-01](/test-01/)
 - [test-02](/test-02/)
 - [atelier-01](/atelier-01/)
+- [atelier-03](/atelier-03/)
