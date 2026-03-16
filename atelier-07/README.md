@@ -49,7 +49,7 @@ ansible all -m copy -a "src=/etc/fstab dest=/tmp/test3.txt"
 ![alt text](image-4.png)
 
 2. deuxième lancement
-![alt text](image-8.png)
+![alt text](image-9.png)
 
 L'idempotence est bien présent, un fichier s'il est le même ne vas pas changer. Ansible vérifie toujours l'état avant de faire une modification
 
