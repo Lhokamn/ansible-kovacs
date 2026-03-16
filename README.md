@@ -7,6 +7,7 @@ Compte de rendu du cours d'Ansible dispensé par M Kovacs à l'IMT Mines Alès d
 - [Louise Arnoux](mailto:louise.arnoux@etu.mines-ales.fr)
 
 
+sub-pages:
 - [test-01](/test-01/)
 - [test-02](/test-02/)
 - [atelier-01](/atelier-01/)
