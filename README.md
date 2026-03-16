@@ -2,7 +2,10 @@
 
 Compte de rendu du cours d'Ansible dispensé par M Kovacs à l'IMT Mines Alès dans le parcours Système et Réseau.
 
-étudiant : [Corentin Claudel](mailto:corentin.claudel@etu.mines-ales.fr)
+étudiants : 
+- [Corentin Claudel](mailto:corentin.claudel@etu.mines-ales.fr)
+- [Louise Arnoux](mailto:louise.arnoux@etu.mines-ales.fr)
+
 
 - [test-01](/test-01/)
 - [test-02](/test-02/)
