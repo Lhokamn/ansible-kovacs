@@ -15,3 +15,4 @@ sub-pages:
 - [atelier-06](/atelier-06/)
 - [atelier-07](/atelier-07/)
 - [atelier-10](/atelier-10/)
+- [atelier-12](/atelier-12/)
