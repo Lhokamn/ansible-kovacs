@@ -55,7 +55,7 @@ ok: [suse] => {
     - name: "Print Python version"
       debug:
         msg: "{{ansible_python_version}} is install on {{ansible_hostname}}"
-        
+
 ...
 ```
 
@@ -88,10 +88,9 @@ ok: [suse] => {
 
 - hosts: all
   tasks:
-    - name: "Print package manager"
+    - name: "Print DNS"
       debug:
-        msg: "{{ansible_hostname}} is connected to {{ansible_dns}} dns"
-
+        msg: "List of dns register for {{ansible_hostname}}: {{ansible_dns.nameservers}}"
 ...
 ```
 
@@ -105,14 +104,14 @@ ok: [debian]
 ok: [suse]
 ok: [rocky]
 
-TASK [Print package manager] ********************************************************************************
+TASK [Print DNS] ********************************************************************************************
 ok: [rocky] => {
-    "msg": "rocky is connected to {'search': ['mines-ales.fr'], 'nameservers': ['10.0.2.3']} dns"
+    "msg": "List of dns register for rocky: ['10.0.2.3']"
 }
 ok: [debian] => {
-    "msg": "debian is connected to {'domain': 'mines-ales.fr', 'search': ['mines-ales.fr.'], 'nameservers': ['10.0.2.3']} dns"
+    "msg": "List of dns register for debian: ['10.0.2.3']"
 }
 ok: [suse] => {
-    "msg": "suse is connected to {'search': ['mines-ales.fr'], 'nameservers': ['10.0.2.3']} dns"
+    "msg": "List of dns register for suse: ['10.0.2.3']"
 }
 ```
