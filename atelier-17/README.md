@@ -170,7 +170,7 @@
   handlers:
     - name: handler for chrony
       service:
-        name: "{{chrony[ansible_ditribution].chrony_service}}"
+        name: "{{chrony[ansible_distribution].chrony_service}}"
         state: restarted
       listen: configure Chrony
 
