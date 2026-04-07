@@ -25,7 +25,7 @@ logdir /var/log/chrony
 ```
 
 ```yml
-#  playbooks/chrony_jinja.yml
+---  # playbooks/chrony_jinja.yml
 - hosts: all
   vars:
     chrony:
