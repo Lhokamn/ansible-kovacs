@@ -74,3 +74,5 @@ ansible all -m command -a "df -h /"
 
 
 On remarque qu'il n'y a pas d'idempotence. Cela est complétement logique car cela ne vérifie pas l'état des *Target Hosts*, mais leur demande uniquement de récupérer une information
+
+[Atelier suivant ->](../atelier-10/)

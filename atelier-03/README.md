@@ -123,3 +123,5 @@ target01 | SUCCESS => {
     "ping": "pong"
 }
 ```
+
+[Atelier suivant ->](../atelier-06/)

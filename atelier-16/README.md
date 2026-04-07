@@ -115,3 +115,5 @@ ok: [suse] => {
     "msg": "List of dns register for suse: ['10.0.2.3']"
 }
 ```
+
+[Atelier suivant ->](../atelier-17/)

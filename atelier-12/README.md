@@ -30,3 +30,5 @@ Playbook pour gérer chrony sur la famille redhat
 
 ...
 ```
+
+[Atelier suivant ->](../atelier-14/)

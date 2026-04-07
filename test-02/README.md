@@ -135,3 +135,5 @@ Bringing machine 'ubuntu' up with 'virtualbox' provider...
 ```
 
 ![alt text](image.png)
+
+[Atelier suivant ->](../atelier-01/)

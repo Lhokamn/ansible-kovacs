@@ -122,3 +122,5 @@ Bringing machine 'alpine-04' up with 'virtualbox' provider...
 ```
 
 ![alt text](image.png)
+
+[Atelier suivant ->](../test-02/)
