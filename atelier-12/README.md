@@ -1,3 +1,8 @@
+
+# A vous de jouer
+
+# Atelier 12
+
 Playbook pour gérer chrony sur la famille redhat
 
 ```yml
@@ -30,5 +35,5 @@ Playbook pour gérer chrony sur la famille redhat
 
 ...
 ```
-
+Ce playbook est bien idempotent et on obtient bien la bonne configuration dans le fichier `/etc/chrony.conf`
 [Atelier suivant ->](../atelier-14/)
