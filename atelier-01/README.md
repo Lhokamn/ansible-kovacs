@@ -6,7 +6,7 @@
 
 ## Challenge 01
 
-- démarrer la VM et se connecter avec vagrant
+- On commence par démarrer la VM et se connecter avec vagrant
 ```bash
 [ema@homelab-cclaudel:atelier-01] $ vagrant up ubuntu
 [ema@homelab-cclaudel:atelier-01] $ vagrant ssh ubuntu 
@@ -26,7 +26,7 @@ PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-poli
 UBUNTU_CODENAME=jammy
 ```
 
-- Rafraîchissez les informations sur les paquets
+- On rafraîchit les informations sur les paquets
 
 ```bash
 vagrant@ubuntu:~$ sudo apt update
@@ -94,7 +94,7 @@ ansible 2.10.8
 
 - Notez la version d'Ansible.
 
-version vieille 2.10.8
+version ancienne ``2.10.8``. 
 ```
 $ ansible --version
 ansible 2.10.8
@@ -173,6 +173,7 @@ ansible [core 2.17.14]
 ```
 
 La version est plus récente que la précédente
+version ``3.0.3``. 
 
 ## Challenge 03
 
@@ -189,7 +190,7 @@ La version est plus récente que la précédente
 [vagrant@rocky ~]$ sudo dnf makecache
 ```
 
-- Création du venv pour ansible
+- Création du ``venv`` pour ansible
 
 ```bash
 python3 -m venv ~/.venv/ansible
