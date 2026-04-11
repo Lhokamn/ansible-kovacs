@@ -53,7 +53,7 @@
 ```
 
 # playbook Rocky
-
+- Un deuxième playbook ```apache-rocky.yml``` qui installe Apache sur l'hôte ```rocky`` avec une page personnalisée 
 ```yml
 ---  # apache-rocky.yml
 
@@ -90,7 +90,7 @@
 ```
 
 # playbook Suse
-
+- Un troisième playbook `apache-suse.yml` qui installe Apache sur l'hôte `suse` avec une page personnalisée Apache web server running on SUSE Linux.
 ```yml
 ---  # apache-suse.yml
 
