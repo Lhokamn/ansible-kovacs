@@ -75,6 +75,6 @@ ansible all -m command -a "df -h /"
 ![alt text](image-7.png)
 
 
-On remarque qu'il n'y a pas d'idempotence. Cela est complétement logique car cela ne vérifie pas l'état des *Target Hosts*, mais leur demande uniquement de récupérer une information
+On remarque qu'il n'y a pas d'idempotence cette fois-ci. Cela est complétement logique car cela ne vérifie pas l'état des *Target Hosts*, mais leur demande uniquement de récupérer une information.
 
 [Atelier suivant ->](../atelier-10/)
