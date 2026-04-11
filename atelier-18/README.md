@@ -1,3 +1,5 @@
+# A vous de jouer
+
 # Atelier 18
 
 | Machine virtuelle | Adresse IP |
@@ -10,7 +12,7 @@
 
 # Compte rendu
 
-- Fichier template de chrony
+- On a ce fichier template de ``chrony`` sur chacune cible. 
 
 ```j2
 # {{ chrony[ansible_distribution].chrony_confdir }}chrony.conf
@@ -23,7 +25,7 @@ makestep 1.0 3
 rtcsync
 logdir /var/log/chrony
 ```
-
+On écrit un playbook qui permet d'installer un fichier de configuration personnalisé sur nos cibles. 
 ```yml
 ---  # playbooks/chrony_jinja.yml
 - hosts: all
