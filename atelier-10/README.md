@@ -1,4 +1,6 @@
-# Atelier 
+# A vous de jouer
+
+# Atelier 10
 
 | Machine virtuelle | Adresse IP |
 | - | - |
@@ -8,6 +10,7 @@
 | suse | 192.168.56.40 |
 
 # playbook Debian
+- Premier playbook ```apache-debian.yml```qui installe Apache sur l'hôte ```debian``` avec une page personnalisée. 
 
 ```yml
 ---  # apache-debian.yml
