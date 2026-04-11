@@ -35,5 +35,6 @@ Playbook pour gérer chrony sur la famille redhat
 
 ...
 ```
-Ce playbook est bien idempotent et on obtient bien la bonne configuration dans le fichier `/etc/chrony.conf`
+Ce playbook est bien idempotent et on obtient bien la bonne configuration dans le fichier `/etc/chrony.conf`. 
+
 [Atelier suivant ->](../atelier-14/)
