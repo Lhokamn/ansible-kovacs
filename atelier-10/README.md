@@ -126,7 +126,7 @@
 ...
 ```
 
-# Resultat
+# Résultats
 
 ## Debian
 
