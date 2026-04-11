@@ -1,6 +1,6 @@
 # A vous de jouer
 
-# Atelier 
+# Atelier 06
 
 | Machine virtuelle | Adresse IP |
 | - | - |
