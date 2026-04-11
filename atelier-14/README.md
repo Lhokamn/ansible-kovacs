@@ -1,4 +1,6 @@
-# atelier
+# A vous de jouer
+
+# Atelier 14
 
 
 - Écrivez un playbook ``myvars1.yml`` qui affiche respectivement votre voiture et votre moto préférée en utilisant le module debug et deux variables ``mycar`` et ``mybike`` définies en tant que play vars.
@@ -18,6 +20,8 @@
 ```
 
 - En utilisant les extra vars, remplacez successivement l'une et l'autre marque - puis les deux à la fois - avant d'exécuter le play.
+
+On remplace d'abord le modèle de voiture, cela fonctionne. 
 
 ```console
 [vagrant@control playbooks]$ ansible-playbook myvars1.yml -e mycar="camaro"
@@ -45,7 +49,7 @@ target01                   : ok=2    changed=0    unreachable=0    failed=0    s
 target02                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 target03                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 ```
-
+Puis on essaie de remplacer le modèle de la moto, cela fonctionne aussi. 
 ```console
 [vagrant@control playbooks]$ ansible-playbook myvars1.yml -e mybike="h2r"
 
@@ -72,7 +76,7 @@ target01                   : ok=2    changed=0    unreachable=0    failed=0    s
 target02                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 target03                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
-
+Enfin on remplace les deux modèles. 
 ```console
 [vagrant@control playbooks]$ ansible-playbook myvars1.yml -e mycar="camaro" -e mybike="h2r"
 
@@ -160,7 +164,7 @@ target03                   : ok=3    changed=0    unreachable=0    failed=0    s
         msg: "My car is {{mycar}} and my byke is an {{mybike}}"
 ...
 ```
-
+On définit les valeurs par défauts dans `group_var/all.yml`. 
 ```yml
 ---  # group_var/all.yml
 mycar: "VW"
@@ -168,7 +172,7 @@ mybike: "BMW"
 ...
 ```
 
-
+Lorsqu'on lance le playbook, on retrouve bien les valeurs par défauts définies pour tous les hôtes. 
 ```console
 [vagrant@control ema]$ ansible-playbook playbooks/myvars3.yml 
 
@@ -197,14 +201,14 @@ target03                   : ok=2    changed=0    unreachable=0    failed=0    s
 ```
 
 - Effectuez le nécessaire pour remplacer VW et BMW par Mercedes et Honda sur l'hôte target02
-
+On remplace les valeurs par defauts dans le fichier `host_vars/target02.yml` pour qu'il prenne nos nouvelles valeurs. 
 ```yml
 ---  # host_vars/target02.yml
 mycar: "Mercedes"
 mybike: "Honda"
 ...
 ```
-
+On obtiens bien les nouvelles valeurs définis pour l'host target02. 
 ```console
 [vagrant@control ema]$ ansible-playbook playbooks/myvars3.yml 
 
@@ -253,8 +257,7 @@ target03                   : ok=2    changed=0    unreachable=0    failed=0    s
 
 ...
 ```
-
-with default value
+Avec les valeurs par défauts, `microlinux` pour `user` et `yatahongaga` pour `password` .
 ```console
 ansible-playbook playbooks/display_user.yml 
 Provide user name [microlinux]: 
@@ -284,7 +287,7 @@ target02                   : ok=2    changed=0    unreachable=0    failed=0    s
 target03                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 ```
 
-with changed value
+Et avec les valeurs modifiées par l'utilisateur. 
 ```console
 [vagrant@control ema]$ ansible-playbook playbooks/display_user.yml 
 Provide user name [microlinux]: Louise
