@@ -1,4 +1,6 @@
-# Atelier 
+# A vous de jouer
+
+# Atelier 15
 
 | Machine virtuelle | Adresse IP |
 | - | - |
@@ -26,7 +28,7 @@
         msg: "{{uname_cmd.stdout_lines}}"
 ...
 ```
-
+On obtiens ce résultat dans la console. 
 ```console
 $ ansible-playbook kernel.yml 
 
@@ -82,6 +84,7 @@ suse                       : ok=3    changed=0    unreachable=0    failed=0    s
         var: uname_cmd.stdout_lines
 ...
 ```
+On obtiens ce résultat dans la console après modification du paramètre `debug` en `var`. 
 
 ```console
 $ ansible-playbook kernel.yml 
@@ -139,7 +142,7 @@ suse                       : ok=3    changed=0    unreachable=0    failed=0    s
         msg: "{{ansible_hostname}} have {{rpm_count.stdout}} packages"
 ...
 ```
-
+Voici le résultat obtenu dans la console. 
 ```console
 $ ansible-playbook packages.yml 
 
