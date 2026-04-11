@@ -1,4 +1,6 @@
-# Atelier 
+# A vous de jouer
+
+# Atelier 16
 
 | Machine virtuelle | Adresse IP |
 | - | - |
@@ -9,7 +11,7 @@
 
 # Compte rendu
 
-- ``pkg-info.yml`` pour afficher le gestionnaire de paquets utilisé
+- Ecrivez le playbook ``pkg-info.yml`` pour afficher le gestionnaire de paquets utilisé
 
 ```yml
 ---  # playbooks/pkg.yml
@@ -22,7 +24,7 @@
 
 ...
 ```
-
+Le résultat obtenus est : 
 ```console
 ansible-playbook playbooks/pkg.yml 
 
@@ -45,7 +47,7 @@ ok: [suse] => {
 }
 ```
 
-- ``python-info.yml`` pour afficher la version de Python installée
+- Ecrivez le playbook ``python-info.yml`` pour afficher la version de Python installée
 
 ```yml
 ---  # playbooks/python-info.yml
@@ -58,7 +60,7 @@ ok: [suse] => {
 
 ...
 ```
-
+Et on obtiens : 
 ```console
 $ ansible-playbook playbooks/python-info.yml 
 
@@ -81,7 +83,7 @@ ok: [suse] => {
 }
 ```
 
-- ``dns-info.yml`` pour afficher le(s) serveur(s) DNS utilisé(s)
+- Enfin ecrivez ``dns-info.yml`` pour afficher le(s) serveur(s) DNS utilisé(s)
 
 ```yml
 ---  # playbooks/dns-info.yml
@@ -93,7 +95,7 @@ ok: [suse] => {
         msg: "List of dns register for {{ansible_hostname}}: {{ansible_dns.nameservers}}"
 ...
 ```
-
+Résultats: 
 ```console
 $ ansible-playbook playbooks/dns-info.yml 
 
